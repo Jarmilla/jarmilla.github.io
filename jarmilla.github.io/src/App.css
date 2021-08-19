@@ -1,3 +1,31 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: aquamarine;
+}
+
 .App {
   text-align: center;
+}
+
+nav {
+  display: flex;
+  position: sticky;
+  top: 0;
+  width: 100vw;
+  background-color: cornflowerblue;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+nav li {
+  list-style: none;
+}
+
+main {
+  margin: 0 5%;
 }
