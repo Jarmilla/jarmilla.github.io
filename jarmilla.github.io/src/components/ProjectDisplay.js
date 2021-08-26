@@ -8,7 +8,7 @@ function ProjectDisplay({ project }) {
           <li>{feature}</li>
         ))}
       </ul>
-      <img src={project.image} alt={project.name} />
+      {Array.isArray(project.image) ? project.image.map((img) => <img src={img} alt={project.name} />) : <img src={project.image} alt={project.name} />}
     </div>
   );
 }
