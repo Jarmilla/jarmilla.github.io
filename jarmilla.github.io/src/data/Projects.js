@@ -1,6 +1,6 @@
 import nasaPic from "../img/FireShot Capture 005 - Daily Nasa - jarmilla.github.io.png";
 
-export default projects = [
+export const projects = [
   {
     name: "Nasa APOD",
     description: "Each day a different image or photograph of our universe is featured, along with a brief explanation written by a professional astronomer.",

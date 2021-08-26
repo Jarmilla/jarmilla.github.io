@@ -1,5 +1,7 @@
 import "./App.css";
 import heartLogo from "./img/heart.png";
+import { projects } from "./data/Projects";
+import ProjectDisplay from "./components/ProjectDisplay";
 
 function App() {
   return (
@@ -25,6 +27,9 @@ function App() {
         </div>
 
         <div id="projects">
+          {projects.map((project) => (
+            <ProjectDisplay project={project} key={project.name} />
+          ))}
           <div>
             <h2>Nasa pictures</h2>
             <p>
