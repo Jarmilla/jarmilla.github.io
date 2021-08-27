@@ -29,3 +29,9 @@ nav li {
 main {
   margin: 0 5%;
 }
+
+.project-display {
+  display: flex;
+  justify-content: center;
+  border: 1px solid black;
+}
