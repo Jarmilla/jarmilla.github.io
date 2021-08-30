@@ -1,19 +1,43 @@
+import React, { useState } from "react";
+import gitLogo from "../img/GitHub-Mark/PNG/GitHub-Mark-32px.png";
+
 function ProjectDisplay({ project }) {
+  const [isShown, setIsShown] = useState(false);
+
   return (
     <div className="project-display">
-     <div className="project-text-container">
-      <h2>{project.name}</h2>
-      <p>{project.description}</p>
-      <ul>
-        {project.features.map((feature, index) => (
-          <li key={index}>{feature}</li>
-        ))}
-      </ul>
-     </div>
-      <div className="project-img-container">
+      <div className="project-text-cont">
+        <h1>{project.name}</h1>
+        <ul>
+          {project.features.map((feature, index) => (
+            <li key={index}>{feature}</li>
+          ))}
+        </ul>
 
-        {Array.isArray(project.image) ? <img src={project.image[0]} alt={project.name} />
-        /* project.image.map((img, index) => <img key={index} src={img} alt={project.name} /> */ : <img src={project.image} alt={project.name} />}
+        <a target="blank" href={project.ghPages}>
+          View full Project
+        </a>
+
+        <a target="blank" href={project.github}>
+          Project on <img src={gitLogo} alt="GitHub Logo" />
+        </a>
+
+        <button onClick={() => setIsShown(!isShown)}>{isShown ? "Hide Description" : "Show Description"}</button>
+        {isShown ? <p>{project.description}</p> : ""}
+      </div>
+
+      <div className="project-img-cont">
+        {Array.isArray(project.image) ? (
+          project.image.map((img, index) => (
+            <a target="blank" href={project.ghPages}>
+              <img key={index} src={img} alt={project.name} />
+            </a>
+          ))
+        ) : (
+          <a target="blank" href={project.ghPages}>
+            <img src={project.image} alt={project.name} />
+          </a>
+        )}
       </div>
     </div>
   );
