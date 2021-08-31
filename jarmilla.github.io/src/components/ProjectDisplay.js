@@ -27,17 +27,19 @@ function ProjectDisplay({ project }) {
       </div>
 
       <div className="project-img-cont">
-        {Array.isArray(project.image) ? (
+        <a target="blank" href={project.ghPages}>
+          {project.image && <img src={project.image} alt={project.name} />}
+        </a>
+
+        {/*   {Array.isArray(project.image) ? (
           project.image.map((img, index) => (
             <a target="blank" href={project.ghPages}>
               <img key={index} src={img} alt={project.name} />
             </a>
           ))
         ) : (
-          <a target="blank" href={project.ghPages}>
-            <img src={project.image} alt={project.name} />
-          </a>
-        )}
+          
+        )} */}
       </div>
     </div>
   );
