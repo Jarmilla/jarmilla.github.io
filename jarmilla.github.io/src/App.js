@@ -1,4 +1,4 @@
-import "./App.css";
+import "./App.scss";
 import heartLogo from "./img/heart.png";
 import { projects } from "./data/Projects";
 import ProjectDisplay from "./components/ProjectDisplay";

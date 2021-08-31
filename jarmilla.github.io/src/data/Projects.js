@@ -1,5 +1,5 @@
 import nasaPic from "../img/FireShot Capture 005 - Daily Nasa - jarmilla.github.io.png";
-import ryuutamaRoll from "../img/FireShot Capture 002 - Ryuutama rolls.png";
+import ryuutama from "../img/FireShot Capture 002 - Ryuutama - jarmilla.github.io.png";
 import adamisFront from "../img/ASDF Adamish SX7 - jarmilla.github.io.png";
 import adamisData from "../img/ASDF Adamish SX7 - 2 jarmilla.github.io.png";
 
@@ -19,7 +19,7 @@ export const projects = [
     features: ["Create and edit your Ryuutama character", "Saving to localStorage", "Roll your checks for the game"],
     ghPages: "https://jarmilla.github.io/ryuutama-rpg/",
     github: "https://github.com/Jarmilla/ryuutama-rpg",
-    image: ryuutamaRoll,
+    image: ryuutama,
   },
   {
     name: "Sci-Fi Scanner",
