@@ -55,6 +55,12 @@ h2 {
   padding: 1rem;
 }
 
+p,
+li {
+  line-height: 150%;
+  letter-spacing: 0.09rem;
+}
+
 #home,
 #projects {
   padding: 64px 0 0 0;
@@ -95,6 +101,14 @@ h2 {
     color: white;
   }
 
+  a {
+    padding: 1rem 0 0;
+  }
+
+  a img {
+    vertical-align: middle;
+  }
+
   ul {
     text-align: left;
     margin: auto;
@@ -117,5 +131,22 @@ a:hover {
 
   img {
     width: 20rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .project-display {
+    flex-direction: column;
+    margin: 0;
+    height: auto;
+
+    &:nth-child(even) {
+      flex-direction: column;
+    }
+  }
+
+  .project-text-cont {
+    margin: 2rem 0 0;
+    width: 70%;
   }
 }

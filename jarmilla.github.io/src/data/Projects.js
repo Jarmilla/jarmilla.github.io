@@ -11,7 +11,7 @@ export const projects = [
   {
     name: "Astronomy Pictures Of the Day",
     description: "Each day a different image or photograph of our universe is featured, along with a brief explanation written by a professional astronomer.",
-    features: ["Fetched from an API (Nasa APOD)", "Preview previous 6 day pictures", "Search options for previous dates."],
+    features: ["Fetched from an API (Nasa APOD)", "Preview of the previous 6 day pictures", "Search options for previous dates."],
     ghPages: "https://jarmilla.github.io/nasa-open-API/",
     github: "https://github.com/Jarmilla/nasa-open-API",
     image: nasaPic,
