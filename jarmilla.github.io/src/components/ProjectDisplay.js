@@ -1,13 +1,11 @@
-import React, { useState } from "react";
-import gitLogo from "../img/GitHub-Mark/PNG/GitHub-Mark-32px.png";
+import gitLogo from "../img/GitHub-Mark/PNG/GitHub-Mark-Light-32px.png";
 
 function ProjectDisplay({ project }) {
-  const [isShown, setIsShown] = useState(false);
-
   return (
     <div className="project-display" style={{ backgroundImage: `url(${project.background.img})`, backgroundSize: `${project.background.backgroundSize}` }}>
       <div className="project-text-cont">
         <h1>{project.name}</h1>
+        <p>{project.description}</p>
         <ul>
           {project.features.map((feature, index) => (
             <li key={index}>{feature}</li>
@@ -21,9 +19,6 @@ function ProjectDisplay({ project }) {
         <a target="blank" href={project.github}>
           Project on <img src={gitLogo} alt="GitHub Logo" />
         </a>
-
-        <button onClick={() => setIsShown(!isShown)}>{isShown ? "Hide Description" : "Show Description"}</button>
-        {isShown ? <p>{project.description}</p> : ""}
       </div>
 
       <div className="project-img-cont">
