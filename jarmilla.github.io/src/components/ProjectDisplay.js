@@ -5,7 +5,7 @@ function ProjectDisplay({ project }) {
   const [isShown, setIsShown] = useState(false);
 
   return (
-    <div className="project-display">
+    <div className="project-display" style={{ backgroundImage: `url(${project.background.img})`, backgroundSize: `${project.background.backgroundSize}` }}>
       <div className="project-text-cont">
         <h1>{project.name}</h1>
         <ul>
