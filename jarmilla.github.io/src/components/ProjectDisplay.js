@@ -6,6 +6,8 @@ function ProjectDisplay({ project }) {
       <div className="project-text-cont">
         <h1>{project.name}</h1>
         <p>{project.description}</p>
+        {project?.used && <p>{project.used}</p>}
+
         <ul>
           {project.features.map((feature, index) => (
             <li key={index}>{feature}</li>
