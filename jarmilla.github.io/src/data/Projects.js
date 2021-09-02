@@ -1,10 +1,9 @@
 import nasaPic from "../img/FireShot Capture 005 - Daily Nasa - jarmilla.github.io.png";
 import ryuutama from "../img/FireShot Capture 002 - Ryuutama - jarmilla.github.io.png";
-import adamisFront from "../img/ASDF Adamish SX7 - jarmilla.github.io.png";
-import adamisData from "../img/ASDF Adamish SX7 - 2 jarmilla.github.io.png";
+import adamis from "../img/ASDF Adamish SX7 - jarmilla.github.io.png";
 
 import nasaBG from "../img/nasa-yZygONrUBe8-unsplash.jpg";
-import ryuutamaBG from "../img/ryuutama_cover_pic.jpg";
+import forestBG from "../img/j-photos-yY1KhFBlisg-unsplash.jpg";
 import startrekBG from "../img/dom-talbot-ZuFxrKGzAj4-unsplash.jpg";
 
 export const projects = [
@@ -18,7 +17,6 @@ export const projects = [
     background: {
       img: nasaBG,
       alt: "Photo by NASA on Unsplash",
-      backgroundSize: "cover",
     },
   },
   {
@@ -30,9 +28,8 @@ export const projects = [
     github: "https://github.com/Jarmilla/ryuutama-rpg",
     image: ryuutama,
     background: {
-      img: ryuutamaBG,
-      alt: "Image from http://kotohi.com/ryuutama/",
-      backgroundSize: "contain",
+      img: forestBG,
+      alt: "Photo by J-Photos on Unsplash",
     },
   },
   {
@@ -42,11 +39,10 @@ export const projects = [
     features: ["QR code scanner", "Weather forecast", "Optimized for mobile devices"],
     ghPages: "https://jarmilla.github.io/adamas-app/",
     github: "https://github.com/Jarmilla/adamas-app",
-    image: adamisFront,
+    image: adamis,
     background: {
       img: startrekBG,
       alt: "Photo by Dom Talbot on Unsplash",
-      backgroundSize: "cover",
     },
   },
 ];

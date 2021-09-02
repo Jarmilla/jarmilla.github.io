@@ -36,22 +36,26 @@ nav {
   }
 }
 
-a {
-  text-decoration: none;
-  font-size: 1.5rem;
-  color: black;
-  padding: 1rem;
-}
-
 h1,
 h2,
 a {
   font-family: Montserrat, Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 
+h1 {
+  color: black;
+}
+
 h2 {
   color: $secondary-color;
   margin: 0;
+  padding: 1rem;
+}
+
+a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: black;
   padding: 1rem;
 }
 
@@ -66,23 +70,19 @@ li {
   padding: 64px 0 0 0;
 }
 
-/* #home {
-  height: 80vh;
-} */
-
 .project-display {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 80vh;
-  margin: 6rem auto;
+  margin: 0 0 4rem 0;
 
   &:nth-child(even) {
     flex-direction: row-reverse;
   }
+
   background-repeat: no-repeat;
   background-position: center;
-  background-image: url("./img/dom-talbot-ZuFxrKGzAj4-unsplash.jpg");
+  background-image: url("");
   background-size: cover;
 }
 
@@ -90,7 +90,7 @@ li {
   display: flex;
   flex-direction: column;
   width: 50%;
-  margin: 0 6rem;
+  margin: 2rem;
   padding: 2rem;
   background-color: rgba(0, 0, 0, 0.5);
   border-radius: 0.5rem;
@@ -137,7 +137,7 @@ a:hover {
 @media (max-width: 768px) {
   .project-display {
     flex-direction: column;
-    margin: 0;
+    margin: 0 0 4rem 0;
     height: auto;
 
     &:nth-child(even) {

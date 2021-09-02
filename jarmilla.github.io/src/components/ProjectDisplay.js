@@ -2,7 +2,7 @@ import gitLogo from "../img/GitHub-Mark/PNG/GitHub-Mark-Light-32px.png";
 
 function ProjectDisplay({ project }) {
   return (
-    <div className="project-display" style={{ backgroundImage: `url(${project.background.img})`, backgroundSize: `${project.background.backgroundSize}` }}>
+    <div className="project-display" style={{ backgroundImage: `url(${project.background.img})` }}>
       <div className="project-text-cont">
         <h1>{project.name}</h1>
         <p>{project.description}</p>
@@ -17,7 +17,7 @@ function ProjectDisplay({ project }) {
         </a>
 
         <a target="blank" href={project.github}>
-          Project on <img src={gitLogo} alt="GitHub Logo" />
+          Project on <img src={gitLogo} alt="GitHub" />
         </a>
       </div>
 
@@ -25,16 +25,6 @@ function ProjectDisplay({ project }) {
         <a target="blank" href={project.ghPages}>
           {project.image && <img src={project.image} alt={project.name} />}
         </a>
-
-        {/*   {Array.isArray(project.image) ? (
-          project.image.map((img, index) => (
-            <a target="blank" href={project.ghPages}>
-              <img key={index} src={img} alt={project.name} />
-            </a>
-          ))
-        ) : (
-          
-        )} */}
       </div>
     </div>
   );
