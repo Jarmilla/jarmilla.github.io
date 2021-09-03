@@ -3,6 +3,7 @@
 
 $primary-color: deepskyblue;
 $secondary-color: blue;
+$text-color: white;
 
 body {
   margin: 0;
@@ -13,20 +14,31 @@ body {
 .App {
   font-family: "Roboto", Arial, Helvetica, sans-serif;
   text-align: center;
-  color: white;
+  color: $text-color;
 }
 
 nav {
   position: sticky;
   top: 0;
-  background-color: white;
-  width: 90vw;
+  background-color: $text-color;
+
+  a {
+    color: black;
+  }
 }
 
 nav,
 footer {
   display: flex;
-  padding: 0 5%;
+  align-items: center;
+  padding: 0 1rem;
+
+  ul {
+    flex: 100 auto;
+    display: flex;
+    justify-content: right;
+  }
+
   li {
     list-style: none;
   }
@@ -38,6 +50,16 @@ footer {
 
   .credit p {
     margin: 0;
+  }
+
+  a {
+    color: $text-color;
+  }
+
+  a:hover {
+    color: $secondary-color;
+    font-weight: bold;
+    transition: all 800ms;
   }
 }
 
@@ -60,19 +82,15 @@ h2 {
 a {
   text-decoration: none;
   font-size: 1.5rem;
-  color: black;
   padding: 1rem;
+
+  img {
+    vertical-align: bottom;
+  }
 }
 
 p {
   margin: 0 0 1rem 0;
-}
-
-ul {
-  flex: 100 auto;
-  display: flex;
-  justify-content: right;
-  align-items: center;
 }
 
 p,
@@ -92,14 +110,14 @@ li {
   align-items: center;
   margin: 0 0 4rem 0;
 
+  background-image: url("");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
   &:nth-child(even) {
     flex-direction: row-reverse;
   }
-
-  background-repeat: no-repeat;
-  background-position: center;
-  background-image: url("");
-  background-size: cover;
 }
 
 .project-text-cont {
@@ -108,21 +126,18 @@ li {
   width: 50%;
   margin: 2rem;
   padding: 2rem;
+
   background-color: rgba(0, 0, 0, 0.5);
   border-radius: 0.5rem;
   box-shadow: rgba(255, 255, 255, 0.35) 5px 10px 15px;
 
   h1,
   a {
-    color: white;
+    color: $text-color;
   }
 
   a {
     padding: 1rem 0 0;
-  }
-
-  a img {
-    vertical-align: middle;
   }
 
   ul {
@@ -132,12 +147,7 @@ li {
 
   li {
     list-style: square;
-    color: white;
   }
-}
-
-a:hover {
-  color: $primary-color;
 }
 
 .project-img-cont {
@@ -148,6 +158,10 @@ a:hover {
   img {
     width: 20rem;
   }
+}
+
+a:hover {
+  color: $primary-color;
 }
 
 @media (max-width: 768px) {
