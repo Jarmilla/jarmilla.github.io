@@ -1,6 +1,4 @@
-import gitLogo from "../img/GitHub-Mark/PNG/GitHub-Mark-Light-32px.png";
-
-function ProjectDisplay({ project }) {
+function ProjectDisplay({ project, gitLogo }) {
   return (
     <div className="project-display" style={{ backgroundImage: `url(${project.background.img})` }}>
       <div className="project-text-cont">
