@@ -48,6 +48,10 @@ footer {
   justify-content: space-between;
   background: $primary-color;
 
+  .credit {
+    padding: 1rem;
+  }
+
   .credit p {
     margin: 0;
   }
@@ -59,10 +63,16 @@ footer {
   a:hover {
     color: $secondary-color;
     font-weight: bold;
-    transition: all 800ms;
+    transition: all 600ms;
   }
 }
 
+#home,
+#projects {
+  padding: 64px 0 0 0;
+}
+
+/* --- Basic text related tags --- */
 h1,
 h2,
 a {
@@ -99,18 +109,14 @@ li {
   letter-spacing: 0.09rem;
 }
 
-#home,
-#projects {
-  padding: 64px 0 0 0;
-}
-
+/* --- Project Display--- */
 .project-display {
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 0 0 4rem 0;
 
-  background-image: url("");
+  background: $secondary-color;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -150,6 +156,10 @@ li {
   }
 }
 
+a:hover {
+  color: $primary-color;
+}
+
 .project-img-cont {
   display: flex;
   justify-content: center;
@@ -158,10 +168,6 @@ li {
   img {
     width: 20rem;
   }
-}
-
-a:hover {
-  color: $primary-color;
 }
 
 @media (max-width: 768px) {
