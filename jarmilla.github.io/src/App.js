@@ -4,6 +4,7 @@ import gitLogo from "./img/GitHub-Mark/PNG/GitHub-Mark-Light-32px.png";
 import linkedInLogo from "./img/linkedin-Light-32px.png";
 import ProjectDisplay from "./components/ProjectDisplay";
 import { projects } from "./data/Projects";
+import Home from "./components/Home";
 
 function App() {
   return (
@@ -25,8 +26,7 @@ function App() {
 
       <main>
         <div id="home">
-          <h1>Adrienn Bodorné Deme </h1>
-          <h2>Junior Frontend developer desire to learn more and interest in games and art</h2>
+          <Home />
         </div>
 
         <div id="projects">

@@ -1,0 +1,56 @@
+$primary-color: deepskyblue;
+$secondary-color: blue;
+
+.intoduction {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80%;
+}
+
+.grid-dodecagon {
+  display: grid;
+  margin: 2rem;
+  width: 40%;
+  gap: 0.5rem;
+  grid-template-columns: repeatr(4 1fr);
+  grid-template-rows: repeatr(5, 1fr);
+  grid-template-areas:
+    ". box1 box1 ."
+    "box2 box3 box3 box4"
+    "box2 box3  box3 box4"
+    "box5 box5 box6 box6"
+    ". box7  box7.";
+}
+
+.yellow {
+  background-color: yellow;
+}
+.lightblue {
+  background-color: $primary-color;
+}
+.darkblue {
+  background-color: $secondary-color;
+}
+
+.box1 {
+  grid-area: box1;
+}
+.box2 {
+  grid-area: box2;
+}
+.box3 {
+  grid-area: box3;
+}
+.box4 {
+  grid-area: box4;
+}
+.box5 {
+  grid-area: box5;
+}
+.box6 {
+  grid-area: box6;
+}
+.box7 {
+  grid-area: box7;
+}
