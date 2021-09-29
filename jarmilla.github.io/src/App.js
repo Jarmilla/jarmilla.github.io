@@ -25,9 +25,7 @@ function App() {
       </nav>
 
       <main>
-        <div id="home">
-          <Home />
-        </div>
+        <Home />
 
         <div id="projects">
           {projects.map((project) => (
