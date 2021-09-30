@@ -20,11 +20,6 @@ body {
 nav {
   position: sticky;
   top: 0;
-  background-color: $text-color;
-
-  a {
-    color: black;
-  }
 }
 
 nav,
@@ -32,6 +27,7 @@ footer {
   display: flex;
   align-items: center;
   padding: 0 1rem;
+  background-color: $primary-color;
 
   ul {
     flex: 100 auto;
@@ -41,19 +37,6 @@ footer {
 
   li {
     list-style: none;
-  }
-}
-
-footer {
-  justify-content: space-between;
-  background: $primary-color;
-
-  .credit {
-    padding: 1rem;
-  }
-
-  .credit p {
-    margin: 0;
   }
 
   a {
@@ -67,9 +50,27 @@ footer {
   }
 }
 
+footer {
+  justify-content: space-between;
+
+  .credit {
+    padding: 1rem;
+  }
+
+  .credit p {
+    margin: 0;
+  }
+}
+
 #home,
 #projects {
   padding: 64px 0 0 0;
+}
+
+#projects {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
 }
 
 /* --- Basic text related tags --- */
@@ -92,7 +93,7 @@ h2 {
 a {
   text-decoration: none;
   font-size: 1.5rem;
-  padding: 1rem;
+  margin: 1rem;
 
   img {
     vertical-align: bottom;
@@ -114,9 +115,7 @@ li {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0 0 4rem 0;
 
-  background: $secondary-color;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
