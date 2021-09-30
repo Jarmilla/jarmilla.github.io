@@ -1,0 +1,60 @@
+@use "variables";
+
+.project-display {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  //background-image is given in ProjectDisplay.js, rendered from data/Project.js
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  &:nth-child(even) {
+    flex-direction: row-reverse;
+  }
+}
+
+.project-text-cont {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin: 2rem;
+  padding: 2rem;
+
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 0.5rem;
+  box-shadow: rgba(255, 255, 255, 0.35) 5px 10px 15px;
+
+  h1,
+  a {
+    color: variables.$text-color;
+  }
+
+  a {
+    padding: 1rem 0 0;
+  }
+
+  ul {
+    text-align: left;
+    margin: auto;
+  }
+
+  li {
+    list-style: square;
+  }
+}
+
+a:hover {
+  color: variables.$primary-color;
+}
+
+.project-img-cont {
+  display: flex;
+  justify-content: center;
+  width: 50%;
+
+  img {
+    width: 20rem;
+  }
+}

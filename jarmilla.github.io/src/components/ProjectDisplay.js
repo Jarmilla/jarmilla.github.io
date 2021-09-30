@@ -1,3 +1,5 @@
+import "../scss/ProjectDisplay.scss";
+
 function ProjectDisplay({ project, gitLogo }) {
   return (
     <div className="project-display" style={{ backgroundImage: `url(${project.background.img})` }}>

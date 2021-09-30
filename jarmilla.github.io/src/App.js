@@ -1,4 +1,4 @@
-import "./App.scss";
+import "./scss/App.scss";
 import heartLogo from "./img/heart.png";
 import gitLogo from "./img/GitHub-Mark/PNG/GitHub-Mark-Light-32px.png";
 import linkedInLogo from "./img/linkedin-Light-32px.png";
