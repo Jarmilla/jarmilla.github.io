@@ -1,3 +1,5 @@
+@use "variables";
+
 #home {
   display: flex;
   justify-content: center;
@@ -41,10 +43,10 @@
   background-color: yellow;
 }
 .lightblue {
-  background-color: deepskyblue;
+  background-color: variables.$primary-color;
 }
 .darkblue {
-  background-color: blue;
+  background-color: variables.$secondary-color;
 }
 
 .box1 {
