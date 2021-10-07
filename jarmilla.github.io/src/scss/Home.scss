@@ -22,6 +22,9 @@
 
 .intoduction {
   width: 70%;
+  h2 {
+    padding: 1rem 1rem 0 1rem;
+  }
 }
 
 .box1,
@@ -40,12 +43,12 @@
 }
 
 .yellow {
-  background-color: yellow;
+  background-color: variables.$third-color;
 }
-.lightblue {
+.primary-color {
   background-color: variables.$primary-color;
 }
-.darkblue {
+.secondary-color {
   background-color: variables.$secondary-color;
 }
 
