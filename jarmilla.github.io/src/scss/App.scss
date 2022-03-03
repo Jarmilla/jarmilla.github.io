@@ -23,19 +23,20 @@ body {
 nav {
   position: sticky;
   top: 0;
+  z-index: 99
 }
 
 nav,
 footer {
   display: flex;
   align-items: center;
-  padding: 0 1rem;
   background-color: variables.$primary-color;
 
   ul {
     flex: 100 auto;
     display: flex;
     justify-content: right;
+    padding: 0;
   }
 
   li {
@@ -114,18 +115,16 @@ li {
 }
 
 @media (max-width: 768px) {
-  .project-display {
+  nav {
     flex-direction: column;
-    margin: 0 0 4rem 0;
-    height: auto;
-
-    &:nth-child(even) {
-      flex-direction: column;
-    }
   }
 
-  .project-text-cont {
-    margin: 2rem 0 0;
-    width: 70%;
+  footer {
+    flex-direction: column-reverse;
   }
+
+  nav ul, footer ul {
+     width: 100%;
+     justify-content: space-evenly;
+   }
 }

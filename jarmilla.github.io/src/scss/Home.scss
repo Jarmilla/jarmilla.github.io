@@ -73,3 +73,13 @@
 .box7 {
   grid-area: box7;
 }
+
+@media (max-width: 768px) {
+  #home {
+    flex-direction: column;
+  }
+
+  .grid-dodecagon {
+    width: 80%;
+  }
+}

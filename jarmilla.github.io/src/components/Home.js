@@ -15,8 +15,8 @@ function Home() {
 
       <div className="intoduction">
         <h1>Adrienn Bodorné Deme </h1>
-        <h2>Junior Frontend developer desire to learn more</h2>
-        <h2>interest in games and art</h2>
+        <h2>Frontend developer desire to learn more</h2>
+        <h2>Interest in games and art</h2>
       </div>
     </div>
   );

@@ -3,6 +3,7 @@ import "../scss/ProjectDisplay.scss";
 function ProjectDisplay({ project, gitLogo }) {
   return (
     <div className="project-display" style={{ backgroundImage: `url(${project.background.img})` }}>
+      
       <div className="project-text-cont">
         <h1>{project.name}</h1>
         <p>{project.description}</p>

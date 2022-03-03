@@ -58,3 +58,27 @@ a:hover {
     width: 20rem;
   }
 }
+
+@media (max-width: 768px) {
+  .project-display {
+    flex-direction: column;
+    margin: 0 0 1rem 0;
+    height: auto;
+
+    &:nth-child(even) {
+      flex-direction: column;
+    }
+  }
+
+  .project-text-cont, .project-img-cont  {
+    width: 70%;
+  }
+
+  .project-img-cont {
+    padding: 0 0 2rem 0;
+  }
+
+  a {
+    margin: 0
+  }
+}
